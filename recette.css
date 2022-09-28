@@ -27,16 +27,11 @@ div.categorie{
     overflow:visible;
 }
 
-div.centre{
-    border-radius: 30px;
-
-}
 
 div.contenu{
     background-color: white;
-    margin: 60px 10% 50px 10%;
-    padding : 0px 30px 30px 30px;
-    min-width:350px;
+    margin: 40px 8px 40px 8px;
+    padding : 0px 8px 20px 8px;
     box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2);
     overflow:visible;
 }
@@ -80,17 +75,17 @@ table.infos{
     width:100%; 
     color:white; 
     background-color: #6c829dC0; 
-    height: 80px;
+    height: 50px;
 }
 
 table.infos td{
     text-align:center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.infos th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
@@ -109,7 +104,7 @@ img.infos{
 }
 
 div.colonne{
-    width:45%;
+    width:100%;
     margin-top: 20px;
 
 }
@@ -124,14 +119,9 @@ div.colonne h2{
 
 div.colonne1{
     display: inline-block;
-    margin-right: 10%;
     /*background-color: lightblue;*/
 }
 
-div.colonne2{
-    float:right;  /*s'affiche à droite du précédent élément, flotte dans la DIV*/
-    /*background-color: lightsalmon;*/
-}
 
 div.ingredients p{
     border: 1px solid lightgray;
@@ -170,6 +160,60 @@ table.preparation td.preparation_etape{
     padding-bottom: 10px;
 }
 
+
+
+
+/*Style pour ordinateur*/
+
+/* Si la largeur de l'écran est supérieur à 768px*/
+/* On a copié les styles pour mobile et on a garder seulement les propriétés à modifier*/
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        margin: 60px 10% 50px 10%;
+        padding : 0px 30px 30px 30px;
+        min-width:350px;
+    }
+
+    table.infos{
+        height: 80px;
+    }
+
+    table.infos td{
+        font-size: 14px;
+    }
+    
+    table.infos th{
+        font-size: 16px;
+    }
+    
+
+    div.colonne{
+        width:45%;
+    }
+    
+    div.colonne1{
+        margin-right: 10%;
+    }
+    
+    div.colonne2{
+        float:right;  /*s'affiche à droite du précédent élément, flotte dans la DIV*/
+        /*background-color: lightsalmon;*/
+    }
+    
+    
+  }
+
+
+  @media only screen and (min-width: 900px) {
+
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto; 
+        width:650px;
+    }
+    
+    
+  }
 
 
 /* mon commentaire CSS*/
